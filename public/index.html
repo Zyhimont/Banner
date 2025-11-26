@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Banner</title>
+    <link rel="stylesheet" href="/src/styles/style.css">
+</head>
+<body>
+
+    <div class="background-layer"></div>
+    <div class="background-overlay"></div>
+
+    <div id="app">
+        <div class="header-nav">
+             <a href="#" class="close-btn">
+                <picture>
+                    <source srcset="/src/assets/images/webp/cross.webp" type="image/webp">
+                    <img src="/src/assets/images/png/cross.png" alt="Art" loading="eager">
+                </picture>
+             </a>
+        </div>
+
+        <h1 class="main-title" data-i18n="Get Unlimited <br>Access"></h1>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <picture>
+                    <source srcset="/src/assets/images/webp/featureCard1.webp" type="image/webp">
+                    <img src="/src/assets/images/png/featureCard1.png" alt="Art" loading="eager">
+                </picture>
+                <div class="feature-text" id="txt-card1" data-i18n="Unlimited Art <br>Creation"></div>
+            </div>
+            <div class="feature-card">
+                <picture>
+                    <source srcset="/src/assets/images/webp/featureCard2.webp" type="image/webp">
+                    <img src="/src/assets/images/png/featureCard2.png" alt="Styles" loading="eager">
+                </picture>
+                <div class="feature-text" id="txt-card2" data-i18n="Exclusive <br>Styles"></div>
+            </div>
+            <div class="feature-card">
+                <picture>
+                    <source srcset="/src/assets/images/webp/featureCard3.webp" type="image/webp">
+                    <img src="/src/assets/images/png/featureCard3.png" alt="Avatars" loading="eager">
+                </picture>
+                <div class="feature-text" id="txt-card3" data-i18n="Magic Avatars <br>With 20% Off"></div>
+            </div>
+        </div>
+
+        <div class="options-container">
+            <div class="option-row selected" data-href="https://apple.com/">
+                <div class="badge" data-i18n="BEST OFFER"></div>
+                <div class="opt-left">
+                    <span class="opt-title" data-i18n="YEARLY ACCESS"></span>
+                    <span class="opt-subtitle" id="txt-yearly-sub" data-i18n="Just {{price}} per year" data-price="yearly"></span>
+                </div>
+                <div class="opt-right">
+                    <span class="opt-right-content" data-i18n="{{price}} <br>per week" data-price="weeklyCalculated"></span>
+                </div>
+            </div>
+
+            <div class="option-row" data-href="https://google.com/">
+                <div class="opt-left">
+                    <span class="opt-title" data-i18n="WEEKLY ACCESS"></span>
+                </div>
+                <div class="opt-right">
+                    <span class="opt-right-content" data-i18n="{{price}} <br>per week" data-price="weekly"></span>
+                </div>
+            </div>
+        </div>
+
+        <button class="continue-button" id="txt-continue" data-i18n="Continue"></button>
+
+        <div class="footer-links">
+            <a href="#" data-i18n="Terms of Use"></a>
+            <a href="#" data-i18n="Privacy Policy"></a>
+            <a href="#" data-i18n="Restore"></a>
+        </div>
+    </div>
+
+    <script type="module" src="/src/scripts/ui.js"></script>
+</body>
+</html>
