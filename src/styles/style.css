@@ -21,10 +21,10 @@ body {
     width: 100%;
     height: 100%;
     z-index: 0;
-    background: url('/src/assets/images/png/Background.png') no-repeat center center;
+    background: url('../assets/images/png/Background.png') no-repeat center center;
     background-image: image-set(
-        url('/src/assets/images/webp/Background.webp') type('image/webp'),
-        url('/src/assets/images/png/Background.png') type('image/png')
+        url('../assets/images/webp/Background.webp') type('image/webp'),
+        url('../assets/images/png/Background.png') type('image/png')
     );
     background-size: cover;
 }
